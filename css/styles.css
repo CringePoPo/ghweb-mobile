@@ -12,6 +12,7 @@
   -ms-scroll-snap-type: inline mandatory;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: var(1rem, 1rem);
+  border-bottom: 2px solid #fff;
 }
 
 .media-scroller {
@@ -31,7 +32,6 @@
   padding: 15px 25px;
   width: 100%;
   display: block;
-  border-bottom: 2px solid #fff;
   white-space: nowrap;
 }
 .cat-sec div {
@@ -94,13 +94,19 @@ header .open-button {
   right: 10px;
 }
 header .earn {
-  padding: 7px 25px;
-  background-color: #000;
+  padding: 8px 25px;
+  background-color: #FFFC01;
   border-radius: 5px;
   position: absolute;
   top: 10px;
   right: 85px;
 }
+@media (max-width: 320px) {
+  header .earn {
+    padding: 5px 15px;
+    right: 75px;
+  }
+}
 header .earn a {
-  color: #fff;
+  color: #000;
 }/*# sourceMappingURL=styles.css.map */
