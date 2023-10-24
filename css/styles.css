@@ -34,7 +34,7 @@
   overflow-x: auto;
   background-color: #a7e32f;
   gap: 7px;
-  padding: 5px 5px;
+  padding: 10px 5px;
   width: 100%;
   overscroll-behavior-inline: contain;
 }
