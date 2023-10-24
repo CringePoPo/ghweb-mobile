@@ -100,7 +100,7 @@
 }
 
 .mobile-menu.open {
-  position: absolute;
+  position: fixed;
 }
 
 header {
@@ -202,6 +202,7 @@ div#mob_menu_2 {
 .article_share {
   position: relative;
   top: auto;
+  z-index: 1;
 }
 
 .mb-5 {

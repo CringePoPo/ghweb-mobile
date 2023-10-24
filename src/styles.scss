@@ -93,7 +93,7 @@
 
 }
 .mobile-menu.open{
-    position: absolute;
+    position: fixed;
 }
 header{
     position: relative;
@@ -193,6 +193,7 @@ ul.dropdown {
 .article_share{
     position: relative;
     top: auto;
+    z-index: 1;
 }
 .mb-5{
     margin-bottom: 15px;
