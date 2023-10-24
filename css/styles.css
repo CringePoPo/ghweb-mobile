@@ -5,7 +5,17 @@
 }
 
 .main-container {
-  padding: 30px 10px 0 10px;
+  padding: 5px 10px 0 10px;
+}
+
+.arrow-menu {
+  position: relative;
+}
+.arrow-menu i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -90px;
 }
 
 .snaps-inline {
@@ -17,22 +27,27 @@
 
 .media-scroller {
   display: flex;
+  /* margin-top: 15px; */
   overflow-x: auto;
+  gap: 4px;
+  padding: 5px 5px;
   width: 100%;
   overscroll-behavior-inline: contain;
 }
 
 .menu-ad {
-  width: 300px;
   height: auto;
-  margin: 0px auto 15px auto;
+  margin: 15px auto 15px auto;
 }
 
 .cat-sec {
-  padding: 15px 25px;
+  padding: 5px 15px;
   width: 100%;
+  border-radius: 50px;
   display: block;
   white-space: nowrap;
+  border: 3px solid white;
+  box-shadow: 0px 0px 10px -4px rgb(0, 0, 0);
 }
 .cat-sec div {
   display: grid;
@@ -42,6 +57,7 @@
   margin: 0;
   color: #fff;
   display: inline;
+  font-size: 12px;
 }
 
 .news-sec {
@@ -77,7 +93,7 @@
 }
 
 .mobile-menu.open {
-  position: fixed;
+  position: absolute;
 }
 
 header {
@@ -109,4 +125,69 @@ header .earn {
 }
 header .earn a {
   color: #000;
+}
+
+ul.dropdown {
+  list-style: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-bottom: 2px solid #70A703;
+}
+ul.dropdown li {
+  border-bottom: 0;
+  color: white;
+  font: Normal 16px/15px Arial;
+  display: block;
+  padding: 15px 0;
+  position: relative;
+  margin-left: 10px;
+  position: relative;
+}
+ul.dropdown li:hover ul.sub-menu, ul.dropdown li:focus ul.sub-menu {
+  display: block;
+}
+ul.dropdown ul.sub-sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-width: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+ul.dropdown ul.sub-sub-menu li {
+  padding: 5px 0;
+}
+ul.dropdown ul.sub-sub-menu li a {
+  color: #000;
+}
+
+#portal-sections {
+  display: flex;
+}
+
+#mob_menu_2 .mob_menu_item {
+  width: 49%;
+}
+
+#mob_menu_2 .mob_menu_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#mob_menu_2 {
+  width: 100%;
+  display: block;
+}
+
+#mob_menu_2 .menu_item_wrapper {
+  display: block;
+  width: 100%;
+}
+
+.mb-5 {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=styles.css.map */
