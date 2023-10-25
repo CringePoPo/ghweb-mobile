@@ -6,6 +6,7 @@
 
 .section-active {
   border: 2px solid #fff;
+  order: -1;
 }
 
 .main-container {
@@ -23,7 +24,7 @@
 }
 
 .bottom-0 {
-  border-bottom: 0;
+  border-bottom: 0 !important;
 }
 
 .snaps-inline {
@@ -242,6 +243,77 @@ div#mob_menu_2 {
   background: #70A703;
 }
 
+.sportspage .categories::-webkit-scrollbar-thumb {
+  background: #FF0001;
+}
+.sportspage .categories::-webkit-scrollbar-thumb:hover {
+  background: #FF0001;
+}
+.sportspage .media-scroller {
+  background-color: #f85151;
+}
+.sportspage .select-selected {
+  color: #FF0001;
+}
+.sportspage .select-selected::after {
+  border-color: #FF0001 transparent transparent transparent;
+}
+
+.businesspage .categories::-webkit-scrollbar-thumb {
+  background: #02AAE9;
+}
+.businesspage .categories::-webkit-scrollbar-thumb:hover {
+  background: #02AAE9;
+}
+.businesspage .media-scroller {
+  background-color: #6dcef1;
+}
+.businesspage .select-selected {
+  color: #02AAE9;
+}
+.businesspage .select-selected::after {
+  border-color: #02AAE9 transparent transparent transparent;
+}
+.businesspage .select-selected::after {
+  right: -5px !important;
+}
+
+.article_section .arrow-left .left_icon, .article_section .arrow-right .right_icon {
+  margin-top: 0;
+}
+
+.article_section .arrow-left .left_icon {
+  padding: 0 20px 17px 0px;
+}
+
+.article_section .arrow-right .right_icon {
+  padding: 0 20px 17px 19px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.entertainmentpage .categories::-webkit-scrollbar-thumb {
+  background: #963A8C;
+}
+.entertainmentpage .categories::-webkit-scrollbar-thumb:hover {
+  background: #963A8C;
+}
+.entertainmentpage .media-scroller {
+  background-color: #d874cd;
+}
+.entertainmentpage .select-selected {
+  color: #963A8C;
+}
+.entertainmentpage .select-selected::after {
+  border-color: #963A8C transparent transparent transparent;
+}
+.entertainmentpage .select-selected::after {
+  right: -35px !important;
+}
+
 /* Handle on hover */
 .categories::-webkit-scrollbar-thumb:hover {
   background: #70A703;
@@ -272,7 +344,7 @@ div#mob_menu_2 {
 
 .select-selected {
   background-color: #ececec;
-  color: #70A703 !important;
+  color: #70A703;
 }
 
 /*style the arrow inside the select element:*/

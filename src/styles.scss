@@ -3,9 +3,11 @@
     padding: 0;
     margin: 0;
 }
+
 // Helpers
 .section-active{
     border: 2px solid #fff;
+    order: -1;
 }
 .main-container {
     padding: 5px 10px 0 10px;
@@ -21,7 +23,7 @@
     }
 }
 .bottom-0{
-    border-bottom: 0;
+    border-bottom: 0 !important;
 }
 .snaps-inline {
     -ms-scroll-snap-type: inline mandatory;
@@ -30,14 +32,15 @@
     border-bottom: 2px solid #fff;
 }
 .media-scroller {
-    display: flex;
-    overflow-x: auto;
-    background-color: #a7e32f;
-    gap: 7px;
-    padding: 10px 5px;
-    width: 100%;
-    overscroll-behavior-inline: contain;
+  display: flex;
+  overflow-x: auto;
+  background-color: #a7e32f;
+  gap: 7px;
+  padding: 10px 5px;
+  width: 100%;
+  overscroll-behavior-inline: contain;
 }
+
 .menu-ad{
     // width: 300px;
     height: auto;
@@ -221,6 +224,7 @@ ul.dropdown {
   }
   
   /* Track */
+
   .categories::-webkit-scrollbar-track {
     background: #f1f1f1; 
   }
@@ -229,11 +233,99 @@ ul.dropdown {
   .categories::-webkit-scrollbar-thumb {
     background:#70A703 ; 
   }
+  .sportspage{
+    & .categories::-webkit-scrollbar-thumb{
+      background: #FF0001;
+    
+      }
+      & .categories::-webkit-scrollbar-thumb:hover{
+        background: #FF0001;
+      
+        }
+        & .media-scroller{
+          background-color: #f85151;
+        
+        }
+        & .select-selected{
+          color: #FF0001;
+
+          &::after{
+            border-color: #FF0001 transparent transparent transparent;
+          }
+        }
+  }
+  .businesspage{
+    & .categories::-webkit-scrollbar-thumb{
+      background: #02AAE9;
+    
+      }
+      & .categories::-webkit-scrollbar-thumb:hover{
+        background: #02AAE9;
+      
+        }
+        & .media-scroller{
+          background-color: #6dcef1;
+        
+        }
+        & .select-selected{
+          color: #02AAE9;
+
+          &::after{
+            border-color: #02AAE9 transparent transparent transparent;
+          }
+        }
+        &  .select-selected::after{
+          right: -5px !important;
+        }
+       
+  }
+  .article_section .arrow-left .left_icon, .article_section .arrow-right .right_icon{
+    margin-top: 0;
+  }
+  .article_section .arrow-left .left_icon{
+    padding: 0 20px 17px 0px;
+  }
+  .article_section .arrow-right .right_icon{
+    padding: 0 20px 17px 19px;
+
+  }
+  .title-container{
+    display: flex;
+    align-items: center;
+  }
+  .entertainmentpage{
+    & .categories::-webkit-scrollbar-thumb{
+      background: #963A8C;
+    
+      }
+      & .categories::-webkit-scrollbar-thumb:hover{
+        background: #963A8C;
+      
+        }
+        & .media-scroller{
+          background-color: #d874cd;
+        
+        }
+        & .select-selected{
+          color: #963A8C;
+
+          &::after{
+            border-color: #963A8C transparent transparent transparent;
+          }
+        }
+
+        & .select-selected::after{
+          right: -35px !important;
+        }
+       
+  }
+
   
   /* Handle on hover */
   .categories::-webkit-scrollbar-thumb:hover {
     background: #70A703; 
   }
+  
   .d-flex{
     display: flex;
     align-items: center;
@@ -259,7 +351,7 @@ ul.dropdown {
   
   .select-selected {
     background-color: #ececec;
-    color: #70A703 !important
+    color: #70A703;
   }
   
   /*style the arrow inside the select element:*/
