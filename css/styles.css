@@ -67,6 +67,17 @@
   font-size: 12px;
 }
 
+.social .twitter_icon .icon, .socialMediaBottom .twitter_icon .icon {
+  background-image: url("../img/twitter-x-logo-42562.png");
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.socialMediaBottom a.twitter {
+  background: #000;
+}
+
 .news-sec {
   background-color: #70A703;
 }
