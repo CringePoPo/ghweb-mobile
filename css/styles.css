@@ -10,7 +10,7 @@
 }
 
 .main-container {
-  padding: 5px 10px 0 10px;
+  padding: 0px 10px 0 10px;
 }
 
 .arrow-menu {
@@ -117,9 +117,10 @@
 }
 
 .mobile-takeover {
-  height: 90px;
-  display: grid;
-  place-items: center;
+  height: 140px;
+}
+.mobile-takeover img {
+  padding: 10px 0;
 }
 
 header {
