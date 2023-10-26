@@ -118,8 +118,11 @@
 
 .mobile-takeover {
   height: 131.81px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+}
+.mobile-takeover img {
+  margin: 0;
 }
 
 header {
