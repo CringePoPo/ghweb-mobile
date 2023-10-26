@@ -109,6 +109,11 @@
 .mobile-menu.open{
     position: fixed;
 }
+.mobile-takeover{
+  height: 90px;
+  display: grid;
+  place-items: center;
+}
 header{
   height: 53px;
     position: relative;
